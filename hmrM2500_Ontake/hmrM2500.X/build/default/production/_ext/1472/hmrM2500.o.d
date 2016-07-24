@@ -1,0 +1,30 @@
+build/default/production/_ext/1472/hmrM2500.o:  \
+../hmrM2500.c  \
+ ../amPic30_v7.h  \
+../hmrType.h  \
+../hmLib_v3_04/bytebase_type.h  \
+ ../hmLib_v3_04/hmLib_config.h  \
+../hmrVMC1.h  \
+../hmrCom.h  \
+../hmrData.h  \
+ ../hmLib_v3_04/cstring.h  \
+ C:/Users/HOMURA/Documents/VisualStudioOnline/homura-vehicle/HomuraSystem/hmrM2500/hmLib_v3_04/bytebase_type.h  \
+ ../hmLib_v3_04/cqueue.h  \
+ C:/Users/HOMURA/Documents/VisualStudioOnline/homura-vehicle/HomuraSystem/hmrM2500/hmLib_v3_04/cdeque.h  \
+ ../hmrMessage.h  \
+../hmrCO2.h  \
+../hmrBattery.h  \
+../hmrGPS.h  \
+../hmrDrive.h  \
+ ../hmrDevice.h  \
+../hmrDevice_kk08.h  \
+../amPic30Extend.h  \
+../hmrInertial.h  \
+ ../hmrInfraRed.h  \
+../hmrSprite.h  \
+../hmrSpriteInterface.h  \
+ ../hmrDeviceManage.h  \
+../hmrTask.h  \
+../hmrThermo.h  \
+ ../hmrDeviceManageMessage.h  \
+../hmrDebug.h 

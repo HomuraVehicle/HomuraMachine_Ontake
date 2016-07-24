@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D03E70F-6332-473C-B053-0D097A9621DA}</ProjectGuid>
+    <RootNamespace>hmrM2500</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="amPic30Extend.h" />
+    <ClInclude Include="amPic30_v7.h" />
+    <ClInclude Include="hmrBufLogger.h" />
+    <ClInclude Include="hmrData.h" />
+    <ClInclude Include="hmrDevice.h" />
+    <ClInclude Include="hmrDevice_kk08.h" />
+    <ClInclude Include="hmrInertial.h" />
+    <ClInclude Include="hmrBattery.h" />
+    <ClInclude Include="hmrCO2.h" />
+    <ClInclude Include="hmrCom.h" />
+    <ClInclude Include="hmrDevice_kk07.h" />
+    <ClInclude Include="hmrDrive.h" />
+    <ClInclude Include="hmrGPS.h" />
+    <ClInclude Include="hmrInfraRed.h" />
+    <ClInclude Include="hmrLoggerMessage_b.h" />
+    <ClInclude Include="hmrMessage.h" />
+    <ClInclude Include="hmrSensor.h" />
+    <ClInclude Include="hmrSprite.h" />
+    <ClInclude Include="hmrSpriteBuffer.h" />
+    <ClInclude Include="hmrSpriteInterface.h" />
+    <ClInclude Include="hmrThermo.h" />
+    <ClInclude Include="hmrVMC1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="amPic30Extend.c" />
+    <ClCompile Include="amPic30_v7.c" />
+    <ClCompile Include="hmLib_v3_04\cdeque.c" />
+    <ClCompile Include="hmLib_v3_04\cqueue.c" />
+    <ClCompile Include="hmLib_v3_04\cstack.c" />
+    <ClCompile Include="hmLib_v3_04\cstring.c" />
+    <ClCompile Include="hmrBufLogger.c" />
+    <ClCompile Include="hmrData.c" />
+    <ClCompile Include="hmrDevice.c" />
+    <ClCompile Include="hmrDeviceManage.c" />
+    <ClCompile Include="hmrDeviceManageMessage.c" />
+    <ClCompile Include="hmrDevice_kk08.c" />
+    <ClCompile Include="hmrInertial.c" />
+    <ClCompile Include="hmrBattery.c" />
+    <ClCompile Include="hmrCO2.c" />
+    <ClCompile Include="hmrCom.c" />
+    <ClCompile Include="hmrDevice_kk07.c" />
+    <ClCompile Include="hmrDrive.c" />
+    <ClCompile Include="hmrGPS.c" />
+    <ClCompile Include="hmrInfraRed.c" />
+    <ClCompile Include="hmrLoggerMessage_b.c" />
+    <ClCompile Include="hmrM2500.c" />
+    <ClCompile Include="hmrMessage.c" />
+    <ClCompile Include="hmrSprite.c" />
+    <ClCompile Include="hmrSpriteBuffer.c" />
+    <ClCompile Include="hmrSpriteInterface.c" />
+    <ClCompile Include="hmrTask.c" />
+    <ClCompile Include="hmrThermo.c" />
+    <ClCompile Include="hmrUtility.c" />
+    <ClCompile Include="hmrVMC1.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Next.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
