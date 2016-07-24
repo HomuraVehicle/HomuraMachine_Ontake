@@ -84,6 +84,8 @@ v1_00/120921 hmIto
 #include "hmrSpriteInterface.h"
 //#include "hmrSHT75.h"
 #include "hmrDebug.h"
+
+#include "hmrFullADC.h"
 //VMC1
 VMC1* pVMC;
 
@@ -284,6 +286,12 @@ int main(void){
 
 
 //	devmng_task_quick_start(10,h2s_task_interrupt,0);
+
+	//FULL ADC CH 
+	msg_regist('f', fulladc_setup_listen, fulladc_listen, fulladc_task_setup_talk, fulladc_talk);
+	devmng_task_quick_start(5, fulladc_task_data, 0);
+	devmng_task_quick_start(5, fulladc_task_inform, 0);
+
 
 
 	HMR_PIN_RedLED_set(0);

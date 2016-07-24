@@ -81,6 +81,9 @@
     <ClInclude Include="hmrDevice.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="hmrFullADC.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hmrCom.c">
@@ -171,6 +174,9 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="hmrDevice.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="hmrFullADC.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
