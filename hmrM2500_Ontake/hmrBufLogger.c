@@ -25,6 +25,7 @@ boolian buflogger_initialize(void) {
 	x_buflogger_Begin=x_buflogger_Buffer;
 	x_buflogger_End=x_buflogger_Buffer;
 	x_buflogger_Size=0;
+	return hmLib_false;
 }
 
 // 終端化関数
@@ -32,7 +33,7 @@ void buflogger_finalize(void) {
 	x_buflogger_Begin=x_buflogger_Buffer;
 	x_buflogger_End=x_buflogger_Buffer;
 	x_buflogger_Size=0;
-	return hmLib_false;
+	//return hmLib_false;
 }
 
 // ログ可能かの確認関数(引数はvcom_data内のデータサイズ確認用)

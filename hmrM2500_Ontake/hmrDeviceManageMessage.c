@@ -786,7 +786,7 @@ void _devmngmsg_mode_informClockMode(void){
 }
 
 //==================== 割り込み関数 ====================
-/*
+
 //スリープ、およびローミング実行用関数
 void timer4_5_interrupt(void){
 	//フラグクリアと時刻のリセット
